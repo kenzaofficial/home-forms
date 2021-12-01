@@ -52,7 +52,7 @@
 .appointment__container::after {
 	position: absolute;
 	content: "";
-	top: -10px;
+	top: 0;
 	left: -90px;
 	background: url(../img/appointment__bg3.svg) 0 0 / contain no-repeat;
 	width:648px;
@@ -67,7 +67,8 @@
 }
 
 .form__title {
-margin-bottom: 30px;
+margin-bottom: 50px;
+text-align: center;
 font-size: 36px;
 font-weight: 900;
 line-height: 42px;
@@ -81,9 +82,7 @@ letter-spacing: 0px;
 	margin-bottom: 30px;
 	gap: 20px;
 }
-.form__title {
-	text-align: center;
-}
+
 
 .form__input {
 	flex: 1 1 auto;
