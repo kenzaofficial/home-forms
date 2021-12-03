@@ -17,7 +17,7 @@
 			<h2 class="header__title">Я хедер</h2>
 		</header>
 		<main class="main">
-			<section class="appointment">
+			<section class="appointment main__appointment">
 				<div class="appointment__container">
 					<form action="#" class="appointment__form form">
 						<h2 class="form__title">Make an appointment</h2>
@@ -41,28 +41,88 @@
 							</div>
 							<textarea name="text" placeholder="Tell us about your puppers include his/her name"
 								class="form__item--area form__input"></textarea>
-						</div>	
-						<div class="appointment__button">
-							<button  class="appointment__link" type="submit">make an appointment</button>
 						</div>
-						
+						<div class="appointment__button">
+							<button class="appointment__link" type="submit">make an appointment</button>
+						</div>
+
 					</form>
-				<div class="appointment-stats">
-					<h3 class="appointment-stats__title">
-						Maxime placeat facere possimus omnis
-					</h3>
-					<div class="appointment-stats__value">
-						5,700+
+					<div class="appointment-stats">
+						<h3 class="appointment-stats__title">
+							Maxime placeat facere possimus omnis
+						</h3>
+						<div class="appointment-stats__value">
+							5,700+
+						</div>
+						<p class="appointment-stats__description">
+							customers served
+						</p>
 					</div>
-					<p class="appointment-stats__description">
-						customers served
-					</p>
-				</div>
 				</div>
 			</section>
-			<form class="summary">
-				<div class="summary__container">
+			<!--summary-->
+			<form class="summary main__summary" action="#">
+				<h3 class="summary__title form-title">Summary</h3>
+				<h4 class="summary__sub-title form-sub-title">Estimate Shipping and Tax</h4>
+				<p class="summary__prompt">Enter your destination to get a shipping estimate.</p>
+				<div class="summary__form-item item-form">
+					<label for="country" class="item-form__label">Country</label>
+					<select id="country" name="select" class="item-form__select">
+						<option value="1">Deutschland</option>
+						<option value="2">France</option>
+						<option value="3">Russia</option>
+						<option value="4">Poland</option>
+						<option value="5">Ukraine</option>
+					</select>
 				</div>
+				<div class="summary__form-item item-form"><label for="state" class="item-form__label">State/Province
+					</label>
+					<input type="text" class="item-form__input" id="state" name="state">
+				</div>
+				<div class="summary__form-item item-form"><label for="zip" class="item-form__label">Zip/Postal Code
+					</label>
+					<input type="number" class="item-form__input" id="zip" name="zip">
+				</div>
+				<div class="summary__radio radio">
+					<div class="radio__item">
+						<h6 class="radio__title">Standart Rate</h6>
+						<input type="radio" id="delivery" name="radio_1" class="radio__input">
+						<label for="delivery" class="radio__label">Price may vary depending
+							on the item/destination. sssssssssssssqwdeqsdasdasdasdassShop Staff will contact you.
+							$21.00</label>
+					</div>
+					<div class="radio__item">
+						<h6 class="radio__title">Pickup from store</h6>
+						<input type="radio" id="delivery_2" name="radio_1" class="radio__input">
+						<label for="delivery_2" class="radio__label">1234 Street Adress City Address, 1234 $0.00</label>
+					</div>
+				</div>
+				<div class="summary__form-item item-form">
+					<h4 class="summary__sub-title">Apply Discount Code</h4>
+					<label for="discount" class="item-form__label">Enter discount code
+					</label>
+					<input type="text" class="item-form__input" id="discount" name="discount"
+						placeholder="Enter Discount code">
+					<button class="summary__button form-button" type="submit">Apply Discount</button>
+				</div>
+			</form>
+			<!-- login -->
+			<form action="#" class="main__login login">
+				<h3 class="login__title form-sub-title">Registred Customers</h3>
+				<h4 class="login__sub-title ">If you have an account, sign in with your email address.</h4>
+				<div class="login__form-item item-form"><label for="email" class="item-form__label">Email<span
+							class="form-required">*</span>
+					</label>
+					<input type="email" required class="item-form__input" id="email" name="email">
+				</div>
+				<div class="login__form-item item-form"><label for="pass" class="item-form__label">Password<span
+							class="form-required">*</span>
+					</label>
+					<input type="password" required class="item-form__input" id="pass" name="pass">
+				</div>
+				<button class="login__button form-button" type="submit">Sign in</button>
+				<a href="#" class="login__link form-link">Forgot Your Password?</a>
+
 			</form>
 		</main>
 		<footer class="footer">

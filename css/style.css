@@ -1,181 +1,391 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 .header {
-	padding: 30px;
-	font-size: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: #71ac85;
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #71ac85;
 }
 
 .footer {
-	padding: 30px;
-	font-size: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: #71ac85;
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #71ac85;
 }
 
 [class*="__container"] {
-	margin: 0 auto;
-	max-width: 1020px;
+  margin: 0 auto;
+  max-width: 1020px;
 }
 
 /* -----Appointment------ */
 
 .form {
-	position: relative;
-	flex: 0 1 auto;
-	padding: 75px 57px ;
-	color: #fff;
-	background: #5D62B5;
-	border-radius: 40px;
-	z-index: 2;
-
+  position: relative;
+  flex: 0 1 auto;
+  padding: 75px 57px;
+  color: #fff;
+  background: #5d62b5;
+  border-radius: 40px;
+  z-index: 2;
 }
 
 .appointment {
-	padding: 130px 0 210px 0;
-	background: #2EB9BD  url(../img/appointment_bg.jpg) center / cover no-repeat;
+  padding: 130px 0 210px 0;
+  background: #2eb9bd url(../img/appointment_bg.jpg) center / cover no-repeat;
+}
+
+.main__appointment {
+  margin-bottom: 20px;
 }
 
 .appointment__container::before {
-	position: absolute;
-	content: "";
-	top: 105px;
-	left: -110px;
-	background: url(../img/appointment__bg2.png)  no-repeat;
-	width: 335px;
-	height: 667px;
+  position: absolute;
+  content: "";
+  top: 105px;
+  left: -110px;
+  background: url(../img/appointment__bg2.png) no-repeat;
+  width: 335px;
+  height: 667px;
 }
 
 .appointment__container::after {
-	position: absolute;
-	content: "";
-	top: 0;
-	left: -90px;
-	background: url(../img/appointment__bg3.svg) 0 0 / contain no-repeat;
-	width:648px;
-	height: 706px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -90px;
+  background: url(../img/appointment__bg3.svg) 0 0 / contain no-repeat;
+  width: 648px;
+  height: 706px;
 }
 
 .appointment__container {
-	display: flex;
-	column-gap:110px;
-	position: relative;
-	z-index: 0;
+  display: flex;
+  column-gap: 110px;
+  position: relative;
+  z-index: 0;
 }
 
 .form__title {
-margin-bottom: 50px;
-text-align: center;
-font-size: 36px;
-font-weight: 900;
-line-height: 42px;
-letter-spacing: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 0px;
 }
 
 .form__items {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 30px;
-	gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
 }
 
-
 .form__input {
-	flex: 1 1 auto;
-	padding: 10px 19px 10px;
-	font-family: roboto, serif;
-	font-size: 16px;;
-	line-height: 24px;
-	letter-spacing: 0.15px;
-	color: white;
-	border-radius: 10px;
-	background: transparent;
-	border: 2px solid #fff;
-	opacity: 0.8;
+  flex: 1 1 auto;
+  padding: 10px 19px 10px;
+  font-family: roboto, serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: white;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 0.8;
 }
 
 .form__input::placeholder {
-	color: #fff;
+  color: #fff;
 }
 
 .form__input:focus {
-	color: white;
-	outline: none;
+  color: white;
+  outline: none;
 }
 
 .form__select {
-	padding-right: 80px;
-	min-height: 48px;
+  padding-right: 80px;
+  min-height: 48px;
 }
 
 .form__select option {
-	color: #fff;
-	background: #F2726F;
+  color: #fff;
+  background: #f2726f;
 }
 
 .form__item--area {
-	min-height: 180px;
-	resize: vertical;
+  min-height: 180px;
+  resize: vertical;
 }
 
-
-
 .appointment__button {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .appointment__link {
-	padding: 12px 34px;
-	font-family: roboto, serif;
-	font-size: 12px;
-	font-weight: 700;
-	line-height: 24px;
-	letter-spacing: 0.15px;
-	color: #fff;
-	background: #F2726F;
-	border-radius: 8px;
-	text-transform: uppercase;
-	cursor: pointer;
-	transition: 0.2s;
+  padding: 12px 34px;
+  font-family: roboto, serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #fff;
+  background: #f2726f;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .appointment__link:hover {
-	background: #f2117a;
-	color: black;
-	box-shadow: 0 3px 7px -1px yellow;
+  background: #a5756a;
 }
 
 /* ----stats----- */
 
 .appointment-stats {
-	flex: 0 0 324px;
-	align-self: center;
-	font-weight: 900;
-	text-align: center;
-	letter-spacing: 0px;
-	color: #fff;
+  flex: 0 0 324px;
+  align-self: center;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #fff;
 }
 
 .appointment-stats__title {
-margin-bottom: 60px;
-font-size: 30px;
-line-height: 36px;
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .appointment-stats__value {
-margin-bottom: 60px;
-font-size: 96px;
-line-height: 56px;
+  margin-bottom: 60px;
+  font-size: 96px;
+  line-height: 56px;
 }
 
-.appointment-stats__description{
-font-size: 19px;
-line-height: 26px;
+.appointment-stats__description {
+  font-size: 19px;
+  line-height: 26px;
 }
 
+/* ----------summary---------- */
 
+.summary {
+  margin: 0 auto;
+  padding: 15px 30px 30px;
+  max-width: 446px;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  background: #b7f7ff;
+}
+
+.main__summary {
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.summary__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.summary__sub-title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.summary__prompt {
+  line-height: 21px;
+  color: #666666;
+}
+
+.summary__prompt:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.summary__form-item {
+  /* padding-top: 10px; */
+  margin-bottom: 10px;
+}
+
+.item-form__label {
+  display: block;
+  /* возможно здесь стоило задать падинг ? но не марджин потому что черезщ марджин будет некликабельная щель */
+  min-height: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 27px;
+  border-radius: 4px;
+}
+
+.item-form__select {
+  width: 100%;
+  padding: 16px 15px;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0;
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+}
+
+.item-form__input {
+  width: 100%;
+  padding: 16px 15px;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+}
+
+/* radio- */
+
+.radio {
+  padding: 10px 0;
+}
+
+.radio__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.radio__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.radio__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.radio__input + .radio__label::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  top: 41px;
+  left: 4px;
+  background: blue;
+  border-radius: 50px;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.radio__input:checked + .radio__label::after {
+  transform: scale(1);
+}
+
+.radio__label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.radio__label::before {
+  content: "";
+  flex: 0 0 21px;
+  align-self: flex-start;
+  height: 21px;
+  border: 2px solid blue;
+  border-radius: 50px;
+}
+
+.form-button {
+  padding: 14px;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.summary__button {
+  margin-top: 20px;
+  width: 100%;
+  color: blue;
+  background: #b7f7ff;
+  outline: 2px solid blue;
+}
+
+.summary__button:hover {
+  background: #a5756a;
+}
+
+/* login------------------------- */
+.login {
+  margin: 0 auto;
+  padding: 40px 60px;
+  max-width: 564px;
+  background: #f5f7ff;
+}
+
+.main__login {
+  margin-bottom: 20px;
+}
+
+.login__sub-title {
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.form-required {
+  color: red;
+  margin-left: 3px;
+}
+
+.login__button {
+  margin-top: 20px;
+  padding: 14px 52px;
+  color: #fff;
+  background: blue;
+}
+
+.login__button:not(:last-child) {
+  margin-right: 25px;
+}
+
+.form-link {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.login__link {
+  color: blue;
+}
+
+.login__link:hover {
+  color: green;
+}
